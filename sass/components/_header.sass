@@ -1,0 +1,93 @@
+@import './_setting'
+.header
+    height: 100vh
+    background: url('../img/11.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    .container
+        .header__top
+            .nav
+                @include header-flex()
+                .logo
+                    margin-top: 2rem
+                .nav-list
+                    display: flex
+                    column-gap: 4rem
+                    a
+                        color: $clr-primary-black
+                        transition: $transition
+                        &:hover
+                            color: $clr-prymary-span
+                    i
+                        font-size: 2.5rem
+        .header__row
+            margin-top: 26.7rem
+            display: flex
+            justify-content: flex-end
+            .header__content
+                .header__block
+                    max-width: 62.4rem
+                    height: 40.9rem
+                    background-color: $clr-primary-yellow
+                    border-radius: 25% 0 25% 0
+                    padding: 10rem 0 0 7rem
+                    .header__title
+                        font-size: 5rem
+                        font-weight: 700
+                        line-height: normal
+                        font-family: $ff
+                        color: $clr-primary-black
+                        margin-bottom: 5rem
+                    a
+                        color: $clr-primary-yellow
+                        padding: 1.9rem 5rem
+                        background-color: $clr-primary-black
+                        font-size: 2.4rem
+                        transition: $transition
+                        &:hover
+                            color: $clr-primary-black
+                            background-color: $clr-primary-white
+//media
+@media (max-width: 1024px)
+    .header__top
+        width: 100vw
+        padding: 0 3.6rem 0 3.6rem
+    .header
+        height: 100rem
+        background: url('../img/11-2.png')
+        .container
+            .header__row
+                width: 100vw
+                margin-top: 0
+                justify-content: end
+                .header__content
+                    .header__block
+                        width: 44rem
+                        height: 28rem
+                        padding: 5rem 0 0 3.5rem
+                        margin-top: 63rem
+                        margin-right: 2rem
+                        .header__title
+                            font-size: 4.4rem
+@media (max-width: 320px)
+    .header
+        background: url('../img/11-3.png')
+        background-repeat: no-repeat
+        height: auto
+        .container
+            width: 100vw
+            .header__top
+                width: 100vw
+                .nav
+                    display: flex
+                    flex-direction: column
+                    row-gap: 1rem
+                    .nav-list
+                        display: flex
+                        column-gap: 2.8rem
+            .header__row
+                .header__content
+                    width: 100vw
+                    .header__block
+                        margin-top: 35rem
+                        width: 100vw

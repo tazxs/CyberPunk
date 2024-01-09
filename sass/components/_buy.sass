@@ -1,0 +1,72 @@
+@import './_setting'
+.buy
+    .buy__content
+        .buy__wrapper
+            display: flex
+            align-items: center
+            .buy__left
+                width: 50vw
+                height: 71.7rem
+                background-image: url('../img/Untitled-1 1.jpg')
+                background-size: cover
+                background-repeat: no-repeat
+            .buy__right
+                width: 50vw
+                height: 71.7rem
+                background-color: $clr-primary-black
+                padding: 7rem 0 0 3.2rem
+                .buy__title
+                    font-size: 6.2rem
+                    font-weight: 400
+                    color: $clr-primary-white
+                    max-width: 62.4rem
+                    margin-bottom: 2.5rem
+                .buy__subticle
+                    color: $clr-prymary-span
+                    font-size: 2.4rem
+                    font-weight: 700
+                    max-width: 22.4rem
+                    margin-bottom: 2.1rem
+                ul
+                    li
+                        display: flex
+                        align-items: center
+                        column-gap: 1rem
+                        color: $clr-primary-white
+                        font-size: 1.8rem
+                        margin-bottom: 2.6rem
+                .buy__top
+                    margin-top: 4.9rem
+                    h3
+                        color: $clr-prymary-span
+                        font-size: 2.4rem
+                        font-weight: 700
+                        margin-bottom: 2.5rem
+                    .grid__block
+                        display: grid
+                        grid-template-columns: 10rem 22.5rem
+                        gap: 5rem
+@media (max-width: 1024px)
+    .buy
+        .buy__content
+            .buy__wrapper
+                width: 100vw
+                .buy__left
+                    width: 35vw
+                .buy__right
+                    width: 75vw
+@media (max-width: 320px)
+    .buy
+        .buy__content
+            .buy__wrapper
+                @include block-flex()
+                .buy__left
+                    width: 100vw
+                    height: 19.8rem
+                .buy__right
+                    width: 100vw
+                    padding: 0 1.2rem 0 1.2rem
+                    .buy__title
+                        font-size: 3rem
+                        font-weight: 700
+                        margin-top: 4rem

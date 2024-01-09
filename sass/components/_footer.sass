@@ -1,0 +1,53 @@
+@import './_setting'
+.footer__top
+    margin-top: 1.3rem
+    .container
+        .nav
+            @include header-flex()
+            .logo
+                display: flex
+                align-items: center
+                column-gap: 3.2rem
+            ul
+                display: flex
+                column-gap: 3.2rem
+                a
+                    color: $clr-primary-black
+                    font-size: 1.8rem
+                    font-weight: 400
+                    transition: $transition
+                    &:hover
+                        color: brown
+.footer__row
+    margin-top: 1.3rem
+    text-align: center
+    background-color: $clr-primary-black
+    padding: 1.3rem 0 0 1.3rem
+    color: $clr-primary-white
+    font-size: 1.2rem
+    height: 4rem
+    font-weight: 400
+@media (max-width: 1024px)
+    .footer
+        .footer__top
+            width: 100vw
+            .container
+                width: 100vw
+                .nav
+                    padding: 0 3.6rem 0 3.6rem
+@media (max-width: 320px)
+    .footer
+        .footer__top
+            .container
+                .nav
+                    @include block-flex()
+                    width: 100vw
+                    .logo
+                        @include block-flex()
+                    ul
+                        @include block-flex()
+                        margin-top: 2.5rem
+                        background: #E6E6E6
+                        width: 100vw
+                        height: 10rem
+                        padding: 2.5rem
